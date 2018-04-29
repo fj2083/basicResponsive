@@ -1,0 +1,128 @@
+<!-- Acme/Template responsive layout by Traversy Media Youtube-->
+<!-- Create project folder, css folder, img folder, and index.html file-->
+<!-- Shortcut (Atom) type html + tab for basic !DOCTYPE html shell-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"><!-- Sets width-->
+    <meta name ="description" content="products and services"><!-- Enter SEO description keywords and author if requested here-->
+    <meta name="keywords" content="type of business, market, level">
+    <meta name="author" content="Frank Estrada">
+    <title>Responsive Web Design | Services</title> <!-- Give page a name and link css below-->
+    <link rel="stylesheet" href="./css/style.css"> <!-- Create blank style.css file in css (Note: case sensitve)folder-->
+  </head>
+  <body><!-- layout html prior to css-->
+    <!-- SPACE -->
+    <header><!-- First step: div with nav etc / css: float right -->
+      <div class="container"><!-- classes are used repeated vs id-->
+        <div id="branding"><!-- id used in one area can use this area to add img logo or text logo-->
+          <h1><span class="highlight">Name of Business</span></h1><!-- span keeps element on line -->
+        </div>
+        <!-- SPACE -->
+        <nav><!-- HTML5 navigation tag use ul and li/ css: float right-->
+          <ul>
+            <li><a href="index.html">Home</a></li><!-- In Atom, use Ctrl + Shift + D to duplicate-->
+            <li><a href="about.html">About</a></li>
+            <li class="current"><a href="services.html">Services</a></li>
+          </ul>
+        </nav>
+        <!-- SPACE -->
+      </div>
+    </header>
+    <!-- ********************************SPACE******************************** -->
+
+
+    <!-- Newsletter section below-->
+    <section id="newsletter"> <!-- Use sections to separate areas of page along with div containers-->
+      <div class="container"><!-- Helps consolidate blocks with width and heigth-->
+        <h1>Subscribe To Our Newsletter</h1>
+        <form><!-- Form shell no backend dev php to start-->
+          <input type="email" placeholder="Enter Email..."> <!-- HTML5 does not require "/" to close input tag-->
+          <button type="submit" class="button_1">Subscribe</button><!-- class added for css styling-->
+        </form>
+      </div>
+    </section>
+
+    <!-- Added space for readability -->
+    <section id="main"><!-- default container will hold 3 div class box with img -->
+      <div class="container"><!-- Create first div box then duplicate -->
+
+        <article id="main-col">
+          <h1 class="page-title">Services</h1>
+          <ul id="services">
+            <li>
+              <h3>Service</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Pricing $$$</p>
+            </li>
+
+            <li>
+              <h3>Service</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Pricing $$$</p>
+            </li>
+
+            <li>
+              <h3>Service</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Pricing $$$</p>
+            </li>
+
+          </ul>
+          <p>
+            Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+
+            Eam viris perfecto eu. Pri ut partem oporteat assueverit, ei nec quod
+            ignota quaerendum. His te pertinax maluisset, ius ad vero civibus interesset.
+            Fabellas senserit voluptaria eos ut, purto civibus cotidieque cu eam.
+            Nisl ancillae eligendi per ei. No quis facer equidem vis, ex vituperata
+            disputationi per.
+          </p>
+          <p class="dark">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>Get Quote</h3>
+            <form class="quote">
+              <div>
+                <label>Name</label><br>
+                <input type="text" placeholder="Name">
+              </div>
+              <div>
+                <label>Email</label><br>
+                <input type="email" placeholder="Email Address">
+              </div>
+              <div>
+                <label>Message</label><br>
+                <textarea placeholder="Message"></textarea>
+              </div>
+              <button class="button_1" type="submit">Send</button>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <!-- SPACE -->
+    <footer> <!-- Website Name and Copyright info -->
+      <p>
+        Website Name, Copyright &copy; 2018
+      </p>
+    </footer>
+  </body>
+</html>
